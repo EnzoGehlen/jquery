@@ -21,7 +21,12 @@ and open the template in the editor.
            <a id="esconde" href="#">me esconde </a> <button onclick="esconde();">esconder</button>
            <br>
            3)Selecionar um link é adicionar um “onclick function” e remover o href <br>
-           <a id="perde" href="#">me tira esse link</a> <button onclick="perde();">tirar</button>
+           <a id="perde" href="#">me tira esse link</a> <button onclick="perde();">tirar</button> 
+           <br>
+           4)Selecionar todos os elementos com uma classe especifica, adicionar uma outra classe qualquer e remover a classe<br>
+           <p class="oi">oi</p><br>
+           <p class="tchau">tchau</p><br>
+           <p class="oi" >oi</p><button onclick="troca()">remover classes oi e adicionar classe boi nelas</button>
            
         </div>
         
@@ -33,7 +38,11 @@ and open the template in the editor.
                 $('#esconde').hide();
             }
             function perde(){
-                $('#perde').removeAttr('href');
+                $('#perde').removeAttr('href'); 
+            }
+            function troca(){
+                $('.oi').addClass('boi');
+                $('.boi').removeClass('oi');
                 
             }
             
