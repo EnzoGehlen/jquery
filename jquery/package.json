@@ -1,0 +1,6 @@
+{
+    "name": "jquery", "version": "1.0.0", "keywords": [
+        "util", "functional", "server", "client", "browser"
+    ], "author": "FAI-234TI-PC", "contributors": [
+    ], "dependencies": {}
+}
