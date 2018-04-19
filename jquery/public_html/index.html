@@ -34,6 +34,8 @@ and open the template in the editor.
            <h4 id="verifica" class="tchau">2</h4>
            <h4 id="verifica" class="bebe">3</h4>
            <h4 id="verifica" class="oi" >4</h4><button onclick="verifica()">qual tem classe a "neyde"?</button><br>
+           7) Pegar um input pelo id ou pela classe e remover o valor dele<br>
+           <input style='width: 20%;' class='kiko' type="text" value='me remove aí parsa' placeholder='putz, não é que removeu mesmo?'><button onclick="remove()">remover esse otário</button>
            
         </div>
         
@@ -64,6 +66,12 @@ and open the template in the editor.
                     $('#verifica').hide();
                 }
             }
+            
+            function remove(){
+                $('.kiko').val("");
+            }
+            
+            
         </script>
     </body>
 </html>
