@@ -16,11 +16,14 @@ and open the template in the editor.
             <script src="../../../../../Users/FAI-234TI-PC/Downloads/jquery-3.3.1.min.js" type="text/javascript"></script>
             1)Selecione um elemento pelo id e destruir ele: <br>
            <a id="destroi" href="#">me destrua todinha</a> <button onclick="destroi();">destruir</button>
+           <br>
+           2)Selecionar todos os elementos com uma classe especifica e esconder <br>
+           
         </div>
         
         <script>
             function destroi(){
-                $('#destroi').hide();
+                $('#destroi').remove();
             }
         </script>
     </body>
