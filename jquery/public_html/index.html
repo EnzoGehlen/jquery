@@ -11,7 +11,7 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
     </head>
-    <body>
+    <body onload="carrega()">
         <div>
             <script src="../../../../../Users/FAI-234TI-PC/Downloads/jquery-3.3.1.min.js" type="text/javascript"></script>
             1)Selecione um elemento pelo id e destruir ele: <br>
@@ -24,9 +24,16 @@ and open the template in the editor.
            <a id="perde" href="#">me tira esse link</a> <button onclick="perde();">tirar</button> 
            <br>
            4)Selecionar todos os elementos com uma classe especifica, adicionar uma outra classe qualquer e remover a classe<br>
-           <p class="oi">oi</p><br>
-           <p class="tchau">tchau</p><br>
-           <p class="oi" >oi</p><button onclick="troca()">remover classes oi e adicionar classe boi nelas</button>
+           <p class="oi">oi</p>
+           <p class="tchau">tchau</p>
+           <p class="oi" >oi</p><button onclick="troca()">remover classes oi e adicionar classe boi nelas</button><br>
+           5)Desenvoler um script que adicione uma classe especifica a elementos quando o documento estiver pronto<br>
+           <a id="carrega" class="tchau">a</a>
+           6) Verificar se um elemento na tela possui uma classe especifica <br>
+           <h4 id="verifica" class="neyde">1</h4>
+           <h4 id="verifica" class="tchau">2</h4>
+           <h4 id="verifica" class="bebe">3</h4>
+           <h4 id="verifica" class="oi" >4</h4><button onclick="verifica()">qual tem classe a "neyde"?</button><br>
            
         </div>
         
@@ -42,10 +49,21 @@ and open the template in the editor.
             }
             function troca(){
                 $('.oi').addClass('boi');
-                $('.boi').removeClass('oi');
-                
+                $('.boi').removeClass('oi');  
             }
             
+            function carrega(){
+                $('#carrega').addClass('enzo');
+            }
+            
+            function verifica(){
+               
+                if ($('#verifica').hasClass('neyde')) {
+                    $('.neyde').text("Euzinha");
+                } else {
+                    $('#verifica').hide();
+                }
+            }
         </script>
     </body>
 </html>
